@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, ScrollView } from 'react-native';
 import Bananas from './Bananas'
 import PizzaTranslator from './PizzaTranslator'
 import ButtonBasics from './ButtonBasics'
+import Movies from './Movies'
 
 export default class App extends React.Component {
   render() {
@@ -13,6 +14,7 @@ export default class App extends React.Component {
           <Bananas />
           <PizzaTranslator />
           <ButtonBasics />
+          <Movies />
         </View>
       </ScrollView>
     );
