@@ -4,19 +4,15 @@ import Bananas from './Bananas'
 import PizzaTranslator from './PizzaTranslator'
 import ButtonBasics from './ButtonBasics'
 import Movies from './Movies'
+import {
+  StackNavigator,
+} from 'react-navigation';
+import RootNavigator from './RootNavigator'
 
 export default class App extends React.Component {
   render() {
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          <Text style={styles.bigblue}>Shake your phone to open the developer menu.</Text>
-          <Bananas />
-          <PizzaTranslator />
-          <ButtonBasics />
-          <Movies />
-        </View>
-      </ScrollView>
+      <RootNavigator />
     );
   }
 }
@@ -27,7 +23,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
   },
   bigblue: {
     color: 'blue',
