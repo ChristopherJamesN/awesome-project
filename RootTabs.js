@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ButtonBasics from './ButtonBasics'
@@ -7,14 +7,14 @@ import IncidentTab from './IncidentTab'
 
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Home Screen</Text>
+    <Text style={styles.bigblue}>Home Screen</Text>
     <Button title="Sign In" />
   </View>
 );
 
 const ProfileScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Profile Screen</Text>
+    <Text style={styles.bigblue}>Profile Screen</Text>
     <Text>Name: </Text>
     <Text>Email: </Text>
     <Text>Grade: </Text>
@@ -23,7 +23,7 @@ const ProfileScreen = () => (
 
 const IncidentScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Incident Screen</Text>
+    <Text style={styles.bigblue}>Incident Screen</Text>
     <TextInput style={{height: 40}} placeholder="Description"></TextInput>
     <TextInput style={{height: 40}} placeholder="Location"></TextInput>
     <TextInput style={{height: 40}} placeholder="Injuries"></TextInput>
@@ -33,7 +33,7 @@ const IncidentScreen = () => (
 
 const SubmittedIncidentsScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text>Submitted Incidents Screen</Text>
+    <Text style={styles.bigblue}>Submitted Incidents Screen</Text>
     <Text style={{height: 40}} placeholder="Description"></Text>
     <Text style={{height: 40}} placeholder="Location"></Text>
     <Text style={{height: 40}} placeholder="Injuries"></Text>
@@ -96,3 +96,23 @@ const RootTabs = TabNavigator({
 });
 
 export default RootTabs;
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  bigblue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+    width: 50,
+    height: 50,
+  },
+});
