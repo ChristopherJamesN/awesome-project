@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TextInput } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import ButtonBasics from './ButtonBasics'
 
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -22,9 +23,10 @@ const ProfileScreen = () => (
 const IncidentScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Incident Screen</Text>
-    <Text>Description: </Text>
-    <Text>Location: </Text>
-    <Text>Injury: </Text>
+    <TextInput placeholder="Description"></TextInput>
+    <TextInput placeholder="Location"></TextInput>
+    <TextInput placeholder="Injuries"></TextInput>
+    <ButtonBasics />
   </View>
 );
 

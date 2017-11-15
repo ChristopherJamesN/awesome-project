@@ -3,7 +3,7 @@ import { Alert, AppRegistry, Button, StyleSheet, View } from 'react-native';
 
 export default class ButtonBasics extends Component {
   _onPressButton() {
-    Alert.alert('You tapped the button!')
+    Alert.alert('Incident Submitted')
   }
 
   render() {
@@ -14,13 +14,7 @@ export default class ButtonBasics extends Component {
         <View style={styles.buttonContainer}>
           <Button
             onPress={this._onPressButton}
-            title="Press Me"
-          />
-        </View>
-        <View style={styles.alternativeLayoutButtonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="This looks great!"
+            title="Submit Incident"
           />
         </View>
       </View>
@@ -30,7 +24,7 @@ export default class ButtonBasics extends Component {
 
 const styles = StyleSheet.create({
   container: {
-   flex: 1,
+   flex: 0.5,
    justifyContent: 'center',
   },
   buttonContainer: {
