@@ -8,11 +8,12 @@ import {
   StackNavigator,
 } from 'react-navigation';
 import RootNavigator from './RootNavigator'
+import RootTabs from './RootTabs'
 
 export default class App extends React.Component {
   render() {
     return (
-      <RootNavigator />
+      <RootTabs />
     );
   }
 }
