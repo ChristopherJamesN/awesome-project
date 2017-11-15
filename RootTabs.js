@@ -19,6 +19,15 @@ const ProfileScreen = () => (
   </View>
 );
 
+const IncidentScreen = () => (
+  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <Text>Incident Screen</Text>
+    <Text>Description: </Text>
+    <Text>Location: </Text>
+    <Text>Injury: </Text>
+  </View>
+);
+
 const RootTabs = TabNavigator({
   Home: {
     screen: HomeScreen,
@@ -37,6 +46,19 @@ const RootTabs = TabNavigator({
     screen: ProfileScreen,
     navigationOptions: {
       tabBarLabel: 'Profile',
+      tabBarIcon: ({ tintColor, focused }) => (
+        <Ionicons
+          name={focused ? 'ios-person' : 'ios-person-outline'}
+          size={26}
+          style={{ color: tintColor }}
+        />
+      ),
+    },
+  },
+  Incident: {
+    screen: IncidentScreen,
+    navigationOptions: {
+      tabBarLabel: 'Incident',
       tabBarIcon: ({ tintColor, focused }) => (
         <Ionicons
           name={focused ? 'ios-person' : 'ios-person-outline'}
