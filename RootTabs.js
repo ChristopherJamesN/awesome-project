@@ -15,9 +15,9 @@ const HomeScreen = () => (
 const ProfileScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text style={styles.bigblue}>Profile Screen</Text>
-    <Text>Name: </Text>
-    <Text>Email: </Text>
-    <Text>Grade: </Text>
+    <Text>Name: Chris</Text>
+    <Text>Email: Chris@email.com</Text>
+    <Text>Grade: 7</Text>
   </View>
 );
 
