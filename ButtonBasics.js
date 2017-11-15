@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { Alert, AppRegistry, Button, StyleSheet, View } from 'react-native';
+import { Navigation } from 'react-navigation';
+import SubmittedIncidentsScreen from './SubmittedIncidentsScreen'
 
 export default class ButtonBasics extends Component {
   _onPressButton() {
     Alert.alert('Incident Submitted')
+    //<SubmittedIncidentsScreen />
   }
 
   render() {
