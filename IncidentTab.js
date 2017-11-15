@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, TextInput, View } from 'react-native';
+import { AppRegistry, Text, TextInput, View, StyleSheet } from 'react-native';
 import ButtonBasics from './ButtonBasics'
 
 export default class IncidentTab extends Component {
@@ -15,7 +15,7 @@ export default class IncidentTab extends Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Incident Screen</Text>
+        <Text style={styles.bigblue}>Incident Screen</Text>
           <TextInput style={{height: 40}}
           placeholder="Description"
           onChangeText={(text) => this.setState({Description:text})}
@@ -33,3 +33,23 @@ export default class IncidentTab extends Component {
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  bigblue: {
+    color: 'blue',
+    fontWeight: 'bold',
+    fontSize: 30,
+  },
+  red: {
+    color: 'red',
+    width: 50,
+    height: 50,
+  },
+});
