@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, TextInput, Button } from 'react-native';
+import { StyleSheet, View, Text, TextInput, Button, Alert } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ButtonBasics from './ButtonBasics'
@@ -8,7 +8,7 @@ import IncidentTab from './IncidentTab'
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text style={styles.bigblue}>Home Screen</Text>
-    <Button title="Sign In" />
+    <Button title="Sign In" onPress={() => Alert.alert('You are now signed in.')}/>
   </View>
 );
 
