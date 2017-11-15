@@ -1,13 +1,14 @@
 import React from 'react';
-import { View, Text, TextInput } from 'react-native';
+import { View, Text, TextInput, Button } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ButtonBasics from './ButtonBasics'
+import IncidentTab from './IncidentTab'
 
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Home Screen</Text>
-    <Text>Sign in</Text>
+    <Button title="Sign In" />
   </View>
 );
 
@@ -23,10 +24,19 @@ const ProfileScreen = () => (
 const IncidentScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
     <Text>Incident Screen</Text>
-    <TextInput placeholder="Description"></TextInput>
-    <TextInput placeholder="Location"></TextInput>
-    <TextInput placeholder="Injuries"></TextInput>
+    <TextInput style={{height: 40}} placeholder="Description"></TextInput>
+    <TextInput style={{height: 40}} placeholder="Location"></TextInput>
+    <TextInput style={{height: 40}} placeholder="Injuries"></TextInput>
     <ButtonBasics />
+  </View>
+);
+
+const SubmittedIncidentsScreen = () => (
+  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <Text>Submitted Incidents Screen</Text>
+    <Text style={{height: 40}} placeholder="Description"></Text>
+    <Text style={{height: 40}} placeholder="Location"></Text>
+    <Text style={{height: 40}} placeholder="Injuries"></Text>
   </View>
 );
 
@@ -58,9 +68,22 @@ const RootTabs = TabNavigator({
     },
   },
   Incident: {
-    screen: IncidentScreen,
+    screen: IncidentTab,
     navigationOptions: {
-      tabBarLabel: 'Incident',
+      tabBarLabel: 'Report',
+      tabBarIcon: ({ tintColor, focused }) => (
+        <Ionicons
+          name={focused ? 'ios-person' : 'ios-person-outline'}
+          size={26}
+          style={{ color: tintColor }}
+        />
+      ),
+    },
+  },
+  SubmittedIncidents: {
+    screen: SubmittedIncidentsScreen,
+    navigationOptions: {
+      tabBarLabel: 'Submitted',
       tabBarIcon: ({ tintColor, focused }) => (
         <Ionicons
           name={focused ? 'ios-person' : 'ios-person-outline'}
