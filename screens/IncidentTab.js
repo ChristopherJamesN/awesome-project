@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, TextInput, View, StyleSheet } from 'react-native';
 import ButtonBasics from '../ButtonBasics'
+import { FormLabel, FormInput } from 'react-native-elements'
+
+
 
 export default class IncidentTab extends Component {
   constructor(props) {
@@ -16,19 +19,9 @@ export default class IncidentTab extends Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text style={styles.bigblue}>Incident Screen</Text>
-          <TextInput style={{height: 40}}
-          placeholder="Description"
-          onChangeText={(text) => this.setState({Description:text})}
-          ></TextInput>
-          <TextInput style={{height: 40}}
-           placeholder="Location"
-           onChangeText={(text) => this.setState({Location:text})}
-           ></TextInput>
-          <TextInput style={{height: 40}}
-          placeholder="Injuries"
-          onChangeText={(text) => this.setState({Injuries:text})}
-          ></TextInput>
-        <ButtonBasics />
+        <FormLabel>Description</FormLabel>
+        <FormInput onChangeText={this.setState(Description: text)}/>
+        <FormValidationMessage>Error message</FormValidationMessage>
       </View>
     );
   }
