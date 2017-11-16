@@ -41,7 +41,7 @@ const RootTabs = TabNavigator({
       tabBarLabel: 'Report',
       tabBarIcon: ({ tintColor, focused }) => (
         <Ionicons
-          name={focused ? 'ios-person' : 'ios-person-outline'}
+          name={focused ? 'ios-add' : 'ios-add'}
           size={26}
           style={{ color: tintColor }}
         />
@@ -54,7 +54,7 @@ const RootTabs = TabNavigator({
       tabBarLabel: 'Submitted',
       tabBarIcon: ({ tintColor, focused }) => (
         <Ionicons
-          name={focused ? 'ios-person' : 'ios-person-outline'}
+          name={focused ? 'ios-people' : 'ios-people-outline'}
           size={26}
           style={{ color: tintColor }}
         />

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, TextInput, View, StyleSheet, Button } from 'react-native';
+import { AppRegistry, Text, TextInput, View, StyleSheet, Button, Alert } from 'react-native';
 
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
