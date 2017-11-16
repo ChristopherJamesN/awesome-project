@@ -6,7 +6,7 @@ import SubmittedIncidentsScreen from './SubmittedIncidentsScreen'
 export default class ButtonBasics extends Component {
   _onPressButton() {
     Alert.alert('Incident Submitted')
-    //<SubmittedIncidentsScreen />
+    //Redirect to <SubmittedIncidentsScreen />
   }
 
   render() {

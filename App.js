@@ -1,13 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import Bananas from './Bananas'
-import PizzaTranslator from './PizzaTranslator'
-import ButtonBasics from './ButtonBasics'
-import Movies from './Movies'
-import {
-  StackNavigator,
-} from 'react-navigation';
-import RootNavigator from './RootNavigator'
+import { StackNavigator } from 'react-navigation';
 import RootTabs from './RootTabs'
 
 export default class App extends React.Component {
