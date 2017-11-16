@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, TextInput, View, StyleSheet } from 'react-native';
-import ButtonBasics from './ButtonBasics'
-import SubmittedIncidentsScreen from './SubmittedIncidentsScreen'
+import ButtonBasics from '../ButtonBasics'
 
 export default class IncidentTab extends Component {
   constructor(props) {

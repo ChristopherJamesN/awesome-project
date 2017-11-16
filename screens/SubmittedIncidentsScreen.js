@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, TextInput, View, StyleSheet } from 'react-native';
-import ButtonBasics from './ButtonBasics'
+import ButtonBasics from '../ButtonBasics'
 
 export default class SubmittedIncidentsScreen extends Component {
   constructor(props) {

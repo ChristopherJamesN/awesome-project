@@ -3,8 +3,8 @@ import { StyleSheet, View, Text, TextInput, Button, Alert } from 'react-native';
 import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ButtonBasics from './ButtonBasics'
-import IncidentTab from './IncidentTab'
-import SubmittedIncidentsScreen from './SubmittedIncidentsScreen'
+import IncidentTab from './screens/IncidentTab'
+import SubmittedIncidentsScreen from './screens/SubmittedIncidentsScreen'
 
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
