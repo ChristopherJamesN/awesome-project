@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, TextInput, View, StyleSheet } from 'react-native';
+import { AppRegistry, Text, TextInput, View, StyleSheet, Alert } from 'react-native';
 import ButtonBasics from '../ButtonBasics'
-import { FormLabel, FormInput } from 'react-native-elements'
+import { FormLabel, FormInput, FormValidationMessage, Form } from 'react-native-elements'
 
 
 
@@ -19,9 +19,12 @@ export default class IncidentTab extends Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text style={styles.bigblue}>Incident Screen</Text>
-        <FormLabel>Description</FormLabel>
-        <FormInput onChangeText={this.setState(Description: text)}/>
-        <FormValidationMessage>Error message</FormValidationMessage>
+          <FormLabel>Description</FormLabel>
+          <FormInput ref={input => this.input = input}/>
+          <FormLabel>Location</FormLabel>
+          <FormInput ref={input => this.input = input}/>
+          <FormLabel>Injuries</FormLabel>
+          <FormInput ref={input => this.input = input}/>
       </View>
     );
   }
