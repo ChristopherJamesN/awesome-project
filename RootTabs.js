@@ -5,22 +5,8 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import ButtonBasics from './ButtonBasics'
 import IncidentTab from './screens/IncidentTab'
 import SubmittedIncidentsScreen from './screens/SubmittedIncidentsScreen'
-
-const HomeScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text style={styles.bigblue}>Home Screen</Text>
-    <Button title="Sign In" onPress={() => Alert.alert('You are now signed in.')}/>
-  </View>
-);
-
-const ProfileScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text style={styles.bigblue}>Profile Screen</Text>
-    <Text>Name: Chris</Text>
-    <Text>Email: Chris@email.com</Text>
-    <Text>Grade: 7</Text>
-  </View>
-);
+import HomeScreen from './screens/HomeScreen'
+import ProfileScreen from './screens/ProfileScreen'
 
 const RootTabs = TabNavigator({
   Home: {
