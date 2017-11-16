@@ -4,6 +4,7 @@ import { TabNavigator } from 'react-navigation';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import ButtonBasics from './ButtonBasics'
 import IncidentTab from './IncidentTab'
+import SubmittedIncidentsScreen from './SubmittedIncidentsScreen'
 
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -18,25 +19,6 @@ const ProfileScreen = () => (
     <Text>Name: Chris</Text>
     <Text>Email: Chris@email.com</Text>
     <Text>Grade: 7</Text>
-  </View>
-);
-
-const IncidentScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text style={styles.bigblue}>Incident Screen</Text>
-    <TextInput style={{height: 40}} placeholder="Description"></TextInput>
-    <TextInput style={{height: 40}} placeholder="Location"></TextInput>
-    <TextInput style={{height: 40}} placeholder="Injuries"></TextInput>
-    <ButtonBasics />
-  </View>
-);
-
-const SubmittedIncidentsScreen = () => (
-  <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text style={styles.bigblue}>Submitted Incidents Screen</Text>
-    <Text style={{height: 40}} placeholder="Description"></Text>
-    <Text style={{height: 40}} placeholder="Location"></Text>
-    <Text style={{height: 40}} placeholder="Injuries"></Text>
   </View>
 );
 

@@ -30,7 +30,6 @@ export default class IncidentTab extends Component {
           onChangeText={(text) => this.setState({Injuries:text})}
           ></TextInput>
         <ButtonBasics />
-        <SubmittedIncidentsScreen Description={this.state.Description} Location={this.state.Location} Injuries={this.state.Injuries}/>
       </View>
     );
   }
