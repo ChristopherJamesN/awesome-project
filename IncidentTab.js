@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { AppRegistry, Text, TextInput, View, StyleSheet } from 'react-native';
 import ButtonBasics from './ButtonBasics'
+import SubmittedIncidentsScreen from './SubmittedIncidentsScreen'
 
 export default class IncidentTab extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ export default class IncidentTab extends Component {
           onChangeText={(text) => this.setState({Injuries:text})}
           ></TextInput>
         <ButtonBasics />
+        <SubmittedIncidentsScreen Description={this.state.Description} Location={this.state.Location} Injuries={this.state.Injuries}/>
       </View>
     );
   }
