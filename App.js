@@ -10,23 +10,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  bigblue: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 30,
-  },
-  red: {
-    color: 'red',
-    width: 50,
-    height: 50,
-  },
-});
