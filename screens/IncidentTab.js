@@ -26,28 +26,8 @@ export default class IncidentTab extends Component {
           <FormInput ref={input => this.input = input}/>
           <Button
           raised
-          title='Submit' />
+          title='Submit' onPress={() => Alert.alert('Incident has been submitted.')}/>
       </View>
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  bigblue: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 30,
-  },
-  red: {
-    color: 'red',
-    width: 50,
-    height: 50,
-  },
-});

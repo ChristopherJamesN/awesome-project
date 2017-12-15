@@ -9,24 +9,4 @@ const HomeScreen = () => (
   </View>
 );
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    flexDirection: 'column',
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  bigblue: {
-    color: 'blue',
-    fontWeight: 'bold',
-    fontSize: 30,
-  },
-  red: {
-    color: 'red',
-    width: 50,
-    height: 50,
-  },
-});
-
 export default HomeScreen;
