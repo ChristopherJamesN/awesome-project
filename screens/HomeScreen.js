@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { AppRegistry, Text, TextInput, View, StyleSheet, Button, Alert } from 'react-native';
+import { AppRegistry, TextInput, View, StyleSheet, Alert } from 'react-native';
+import { Button, Text } from 'react-native-elements'
 
 const HomeScreen = () => (
   <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Text style={styles.bigblue}>Home Screen</Text>
-    <Button title="Sign In" onPress={() => Alert.alert('You are now signed in.')}/>
+    <Text h3>Home Screen</Text>
+    <Button large title="Sign In" onPress={() => Alert.alert('You are now signed in.')}/>
   </View>
 );
 

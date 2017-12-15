@@ -5,6 +5,7 @@ import { Navigation } from 'react-navigation';
 export default class ButtonBasics extends Component {
   _onPressButton() {
     Alert.alert('Incident Submitted')
+
   }
 
   render() {
