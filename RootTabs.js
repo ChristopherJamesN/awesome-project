@@ -9,6 +9,7 @@ import HomeScreen from './screens/HomeScreen'
 import ProfileScreen from './screens/ProfileScreen'
 
 const RootTabs = TabNavigator({
+
   Home: {
     screen: HomeScreen,
     navigationOptions: {

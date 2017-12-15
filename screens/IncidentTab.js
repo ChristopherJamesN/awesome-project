@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { AppRegistry, TextInput, View, StyleSheet, Alert } from 'react-native';
 import { FormLabel, FormInput, FormValidationMessage, Form, Button, Text } from 'react-native-elements'
 
-
-
 export default class IncidentTab extends Component {
   constructor(props) {
     super(props);
