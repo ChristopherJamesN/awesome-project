@@ -3,27 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "2.0.1",
-    "jest-expo": "^33.0.2",
-    "react-test-renderer": "16.8.6"
+    "jest-expo": "^36.0.1",
+    "react-test-renderer": "16.13.1"
   },
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
-    "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --watch"
+    "start": "expo start",
+    "eject": "expo eject",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "test": "jest"
   },
   "jest": {
     "preset": "jest-expo"
   },
   "dependencies": {
-    "expo": "^33.0.7",
-    "react": "^16.8.6",
-    "react-native": "^0.60.3",
-    "react-native-elements": "^1.1.0",
+    "expo": "^36.0.2",
+    "react": "^16.13.1",
+    "react-native": "^0.62.0",
+    "react-native-elements": "^1.2.7",
     "react-native-vector-icons": "^6.6.0",
-    "react-navigation": "^3.11.1"
+    "react-navigation": "^4.3.5",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0"
   }
 }
