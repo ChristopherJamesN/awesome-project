@@ -20,7 +20,7 @@
     "babel-plugin-transform-react-jsx-source": "^6.22.0",
     "expo": "^36.0.2",
     "react": "^16.13.1",
-    "react-native": "^0.62.0",
+    "react-native": "^0.62.3",
     "react-native-elements": "^1.2.7",
     "react-native-vector-icons": "^6.6.0",
     "react-navigation": "^4.3.5"
